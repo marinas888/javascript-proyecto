@@ -63,11 +63,12 @@ display.textContent=0;
 cero.onclick = function(e){
 if(display.textContent==0){
     display.textContent=0;
-    }else if (display.textContent.length<8){
+    }else{
+    if (display.textContent.length<8){
     display.textContent=(display.textContent)+"0";
-    }
 }
-
+}
+}
 
 
 
@@ -75,11 +76,12 @@ if(display.textContent==0){
 uno.onclick = function(e){
 if(display.textContent==0){
     display.textContent=1;
-    }else if (display.textContent.length<8){
+    }else{
+    if (display.textContent.length<8){
     display.textContent=(display.textContent)+"1";
-    }
 }
-
+}
+}
 
 
 
@@ -87,9 +89,11 @@ if(display.textContent==0){
 dos.onclick = function(e){
 if(display.textContent==0){
     display.textContent=2;
-    }else if (display.textContent.length<8){
+    }else{
+     if (display.textContent.length<8){
     display.textContent=(display.textContent)+"2";
-    }
+}
+}
 }
 
 
@@ -99,11 +103,12 @@ if(display.textContent==0){
 tres.onclick = function(e){
 if(display.textContent==0){
     display.textContent=3;
-    }else if (display.textContent.length<8){
+    }else{
+     if (display.textContent.length<8){
     display.textContent=(display.textContent)+"3";
-    }
 }
-
+}
+}
 
 
 
@@ -112,12 +117,12 @@ if(display.textContent==0){
 cuatro.onclick = function(e){
 if(display.textContent==0){
     display.textContent=4;
-    }else if (display.textContent.length<8){
+    }else{
+     if (display.textContent.length<8){
     display.textContent=(display.textContent)+"4";
-    }
 }
-
-    
+}
+}   
 
 
 
@@ -125,11 +130,12 @@ if(display.textContent==0){
 cinco.onclick = function(e){
 if(display.textContent==0){
     display.textContent=5;
-    }else if (display.textContent.length<8){
+    }else{
+     if (display.textContent.length<8){
     display.textContent=(display.textContent)+"5";
-    }
 }
-
+}
+}
 
 
 
@@ -138,11 +144,12 @@ if(display.textContent==0){
 seis.onclick = function(e){
 if(display.textContent==0){
     display.textContent=6;
-    }else if (display.textContent.length<8){
+    }else{
+    if (display.textContent.length<8){
     display.textContent=(display.textContent)+"6";
-    }
 }
-
+}
+}
 
 
 
@@ -150,11 +157,12 @@ if(display.textContent==0){
 siete.onclick = function(e){
 if(display.textContent==0){
     display.textContent=7;
-    }else if (display.textContent.length<8){
+    }else{
+     if (display.textContent.length<8){
     display.textContent=(display.textContent)+"7";
-    }
 }
-
+}
+}
 
 
 
@@ -162,21 +170,25 @@ if(display.textContent==0){
 ocho.onclick = function(e){
 if(display.textContent==0){
     display.textContent=8;
-    }else if (display.textContent.length<8){
+    }else{
+     if (display.textContent.length<8){
     display.textContent=(display.textContent)+"8";
-    }
 }
-
+}
+}
 
 
 
 
 nueve.onclick = function(e){
 if(display.textContent==0){
-     display.textContent = 9.toString().substring(0, 8);
-  
+    display.textContent=9;  
+    }else{
+    if(display.textContent.length<8){
+    display.textContent=(display.textContent)+"9";
 }
-
+}
+}
 
  
 
@@ -185,11 +197,12 @@ punto.onclick = function(e){
 var aux = display.textContent;
 if(aux==0){
     display.textContent=".";
-    }else if(aux>1){
-        display.textContent=(display.textContent)+".";
-    }
+    }else{
+    if(aux>1){
+    display.textContent=(display.textContent)+".";
 }
-
+}
+}
        
      
     
@@ -200,7 +213,7 @@ var num = display.textContent;
 if(num!=0){
     num=parseFloat(num) *(-1);
     display.textContent = num;
-    }
+}
 }
 
 
