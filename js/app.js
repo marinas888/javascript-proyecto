@@ -11,211 +11,200 @@ var operacion;
 
 
 
-	function init(){
-    var cero = document.getElementById("0");   
-    var uno = document.getElementById("1");
-    var dos = document.getElementById("2");
-    var tres = document.getElementById("3");
-    var cuatro = document.getElementById("4");
-    var cinco = document.getElementById("5");
-    var seis = document.getElementById("6");
-    var siete = document.getElementById("7");
-    var ocho = document.getElementById("8");
-    var nueve = document.getElementById("9");
-    var on = document.getElementById("on");
-    var sign = document.getElementById(" sign");
-    var raiz = document.getElementById("raiz");
-    var dividido = document.getElementById("dividido");
-    var por = document.getElementById("por");
-    var igual = document.getElementById("igual");
-    var menos = document.getElementById("menos");
-    var punto = document.getElementById("punto");
-    var mas = document.getElementById("mas"); 
-    var display = document.getElementById("display"); 
+	
+var cero = document.getElementById("0");   
+var uno = document.getElementById("1");
+var dos = document.getElementById("2");
+var tres = document.getElementById("3");
+var cuatro = document.getElementById("4");
+var cinco = document.getElementById("5");
+var seis = document.getElementById("6");
+var siete = document.getElementById("7");
+var ocho = document.getElementById("8");
+var nueve = document.getElementById("9");
+var on = document.getElementById("on");
+var sign = document.getElementById("sign");
+var raiz = document.getElementById("raiz");
+var dividido = document.getElementById("dividido");
+var por = document.getElementById("por");
+var igual = document.getElementById("igual");
+var menos = document.getElementById("menos");
+var punto = document.getElementById("punto");
+var mas = document.getElementById("mas"); 
+var display = document.getElementById("display"); 
 
-}
+
+
 
    
 
+var img = document.getElementsByTagName("img");
 
-
-
-for (var i = 0; i < document.getElementsByTagName("img").length; i++) {
-    document.getElementsByTagName("img")[i].onmousedown=function(){
-        this.style.transform="Scale(0.5,0.5)";
+for (var i = 0; i < img.length; i++) {
+   img[i].onmousedown=function(){
+        this.style.transform="Scale(0.95, 0.95)";
     }
 
-      document.getElementsByTagName("img")[i].onmouseup=function(){
-        this.style.transform="Scale(1,1)";
+     img[i].onmouseup=function(){
+       this.style.transform="Scale(1, 1)";
+    
     }
 }
+
+
+
+
 
 display.textContent=0;
 
 
 
- document.getElementById("0").onclick = function(e){
+
+cero.onclick = function(e){
 if(display.textContent==0){
-display.textContent=0;
-}else{
-if (display.textContent.length<8){
-display.textContent=(display.textContent)+"0";
-}
-}
+    display.textContent=0;
+    }else if (display.textContent.length<8){
+    display.textContent=(display.textContent)+"0";
+    }
 }
 
 
 
 
 
-
- document.getElementById("1").onclick = function(e){
+uno.onclick = function(e){
 if(display.textContent==0){
-display.textContent=1;
-}else{
-if (display.textContent.length<8){
-display.textContent=(display.textContent)+"1";
-}
-}
+    display.textContent=1;
+    }else if (display.textContent.length<8){
+    display.textContent=(display.textContent)+"1";
+    }
 }
 
 
 
 
 
-
-
-
- document.getElementById("2").onclick = function(e){
+dos.onclick = function(e){
 if(display.textContent==0){
-display.textContent=2;
-}else{
-if (display.textContent.length<8){
-display.textContent=(display.textContent)+"2";
-}
-}
+    display.textContent=2;
+    }else if (display.textContent.length<8){
+    display.textContent=(display.textContent)+"2";
+    }
 }
 
 
 
 
 
- document.getElementById("3").onclick = function(e){
+tres.onclick = function(e){
 if(display.textContent==0){
-display.textContent=3;
-}else{
-if (display.textContent.length<8){
-display.textContent=(display.textContent)+"3";
-}
-}
+    display.textContent=3;
+    }else if (display.textContent.length<8){
+    display.textContent=(display.textContent)+"3";
+    }
 }
 
 
 
 
 
- document.getElementById("4").onclick = function(e){
+
+cuatro.onclick = function(e){
 if(display.textContent==0){
-display.textContent=4;
-}else{
-if (display.textContent.length<8){
-display.textContent=(display.textContent)+"4";
+    display.textContent=4;
+    }else if (display.textContent.length<8){
+    display.textContent=(display.textContent)+"4";
+    }
 }
-}
-}
+
     
 
 
 
-document.getElementById("5").onclick = function(e){
+
+cinco.onclick = function(e){
 if(display.textContent==0){
-display.textContent=5;
-}else{
-if (display.textContent.length<8){
-display.textContent=(display.textContent)+"5";
-}
-}
-}
-
-
-
-
-
- document.getElementById("6").onclick = function(e){
-if(display.textContent==0){
-display.textContent=6;
-}else{
-if (display.textContent.length<8){
-display.textContent=(display.textContent)+"6";
-}
-}
-}
-
-
- document.getElementById("7").onclick = function(e){
-if(display.textContent==0){
-display.textContent=7;
-}else{
-if (display.textContent.length<8){
-display.textContent=(display.textContent)+"7";
-}
-}
-}
-
-
-
- document.getElementById("8").onclick = function(e){
-if(display.textContent==0){
-display.textContent=8;
-}else{
-if (display.textContent.length<8){
-display.textContent=(display.textContent)+"8";
-}
-}
-}
-
-
-
- document.getElementById("9").onclick = function(e){
-if(display.textContent==0){
-display.textContent=9;
-}else{
-if (display.textContent.length<8){
-display.textContent=(display.textContent)+"9";
-}
-}
-}
-
- 
-
-
-
- document.getElementById("punto").onclick = function(e){
-   if(display.textContent==0){
-        display.textContent=".";
-    }else{
-       display.textContent=(display.textContent)+".";
-     
+    display.textContent=5;
+    }else if (display.textContent.length<8){
+    display.textContent=(display.textContent)+"5";
     }
 }
 
+
+
+
+
+
+seis.onclick = function(e){
+if(display.textContent==0){
+    display.textContent=6;
+    }else if (display.textContent.length<8){
+    display.textContent=(display.textContent)+"6";
+    }
+}
+
+
+
+
+
+siete.onclick = function(e){
+if(display.textContent==0){
+    display.textContent=7;
+    }else if (display.textContent.length<8){
+    display.textContent=(display.textContent)+"7";
+    }
+}
+
+
+
+
+
+ocho.onclick = function(e){
+if(display.textContent==0){
+    display.textContent=8;
+    }else if (display.textContent.length<8){
+    display.textContent=(display.textContent)+"8";
+    }
+}
+
+
+
+
+
+nueve.onclick = function(e){
+if(display.textContent==0){
+     display.textContent = 9.toString().substring(0, 8);
+  
+}
+
+
+ 
+
+ 
+punto.onclick = function(e){
+var aux = display.textContent;
+if(aux==0){
+    display.textContent=".";
+    }else if(aux>1){
+        display.textContent=(display.textContent)+".";
+    }
+}
 
        
      
     
- 
-          
-document.getElementById("sign").onclick = function(e){
-   
-       if(display.textContent==0){
-        display.textContent="-";
-    }else{
-       display.textContent=(display.textContent)+"-";
-     
+
+
+sign.onclick = function(e){
+var num = display.textContent;
+if(num!=0){
+    num=parseFloat(num) *(-1);
+    display.textContent = num;
     }
 }
-     
-    
+
+
+
 
 
 
@@ -224,7 +213,9 @@ function resetear(){
     operandoa=0;
     operandob=0;
     operacion="";
-    }
+}
+
+
 
 
 
@@ -233,40 +224,62 @@ on.onclick = function(e){
 }
 
 
+
+
+
 mas.onclick = function(e){
-        operandoa =display.textContent;
-        operacion = "+";
-        limpiar();
-    }
+    operandoa =display.textContent;
+    operacion = "+";
+    limpiar();
+}
+
+
+
+
 
 menos.onclick = function(e){
-        operandoa =display.textContent;
-        operacion = "-";
-        limpiar();
-    }
+    operandoa =display.textContent;
+    operacion = "-";
+    limpiar();
+}
+
+
 
 
 dividido.onclick = function(e){
-        operandoa =display.textContent;
-        operacion = "/";
-        limpiar();
-    }
+    operandoa =display.textContent;
+    operacion = "/";
+    limpiar();
+}
+
+
+
+
 
 por.onclick = function(e){
-        operandoa =display.textContent;
-        operacion = "*";
-        limpiar();
-    }
+    operandoa =display.textContent;
+    operacion = "*";
+    limpiar();
+}
+
+
+
 
 
 function limpiar(){
     display.textContent = "";
 }
 
+
+
+
 igual.onclick = function(e){
-        operandob = display.textContent;
-        resolver();
-    }
+    operandob = display.textContent;
+    resolver();
+}
+
+
+
 
 function resolver(){
     var res=0;
@@ -288,9 +301,8 @@ function resolver(){
         break;
     }
     resetear();
-    display.textContent = res;
+    display.textContent = res.toString().substring(0, 8);
 }
-
 
 
 }());
